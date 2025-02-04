@@ -31,6 +31,10 @@ In a situation where updates are being promoted from dev to prod, we can leverag
 3. Copy user views from prod TML to dev TML
 4. Push dev TML to prod
 
+## Requirements
+
+- Python (`3.6` or above)
+
 ## A note on authentication
 
 ThoughtSpot provides multiple ways to authenticate via API. In this code sample I am using username + secret key to get a full access token. You can also use username + password to generate a full access token. There is no inherent advantage/benefit to using the secret key, it's simply the option that I have available to me for the cluster I built this against. So the precise method is left to you to determine. You'll just need to make sure that the method you use generates a token that can be used for subsequent api calls.
